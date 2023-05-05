@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
-    
+<body class="bg-dark">
+    <div id="app">
+        <div :class="backgroundValue">
+            <h1 :class="classValue">{{message}}</h1>
+            <div :class="align"><img :src="imgSource"></div>
+        </div>
+    </div>
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
